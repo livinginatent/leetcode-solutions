@@ -21,3 +21,5 @@ const canPlaceFlowers = (flowerbed, n) => {
   }
   return count >= n;
 };
+
+// arr = [1,0,0,0,1,0,0,1]
