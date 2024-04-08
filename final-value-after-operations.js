@@ -3,7 +3,7 @@ const finalValueAfterOperations = (operations) => {
   for(const op of operations){
     op.includes('+') ? X++ : X--
   }
-  console.log(X)
+  
   return X
 }
 
