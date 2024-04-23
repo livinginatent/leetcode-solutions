@@ -1,15 +1,15 @@
-const finalString = (s)=> {
-const arr = s.split('')
-arr
-let res =[]
-arr.map((ch,i)=>{
-    if(ch==='i'){
-       return res.push(arr.slice(0, i).reverse().join(""), arr.slice(i + 1).join(''));
-       
+const finalString = (s) => {
+  const arr = s.split("");
+  let res = "";
+  for (const ch of s) {
+    if (ch !== "i") {
+      res += ch;
+    } else {
+      res = res.split("").reverse().join("");
     }
-})
-return(res.join(''))
+  }
+  return res;
 };
-finalString('string')
+finalString("string");
 
 // s = 'string'
