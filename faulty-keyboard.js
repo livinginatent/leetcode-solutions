@@ -1,5 +1,4 @@
 const finalString = (s) => {
-  const arr = s.split("");
   let res = "";
   for (const ch of s) {
     if (ch !== "i") {
@@ -8,6 +7,7 @@ const finalString = (s) => {
       res = res.split("").reverse().join("");
     }
   }
+  console.log(res)
   return res;
 };
 finalString("string");
