@@ -1,9 +1,13 @@
 const reverseWords = (s) => {
-  return s
-    .split(" ")
-    .filter((char) => char !== "")
-    .reverse()
-    .join(" ");
+const words = s.split(" ")
+words
+const t = words.filter((ch)=>ch!=='')
+
 };
+
+
+//Input: s = "the sky is blue"
+
+reverseWords("  hello world  ");
 
 
