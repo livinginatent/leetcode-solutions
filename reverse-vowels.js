@@ -1,8 +1,8 @@
-const reverseVowels = function (s) {
-  let word = s.split("");
-  let vowels = "aeouiAEOUI";
+const reverseVowels = (str) => {
+  const word = str.split("");
   let start = 0;
-  let end = word.length - 1;
+  let end = str.length - 1;
+  const vowels = "aeiouAEIOU";
   while (start < end) {
     while (start < end && !vowels.includes(word[start])) {
       start++;
@@ -14,5 +14,7 @@ const reverseVowels = function (s) {
     start++;
     end--;
   }
-  return word.join('');
+  return word
 };
+
+reverseVowels("hello");

@@ -3,7 +3,7 @@ const canPlaceFlowers = (flowerbed, n) => {
   let next = 1;
   let count = 0;
   const getValue = (arr, i) => {
-    if (i < 0 || i >= arr.length) {
+    if (i < 0 || i >=arr.length) {
       return 0;
     }
     return arr[i];
