@@ -10,10 +10,8 @@ const canPlaceFlowers = (flowerbed, n) => {
   };
   for (let i = 0; i < flowerbed.length; i++, prev++, next++) {
     if (
-      getValue(flowerbed, prev) +
-        getValue(flowerbed, i) +
-        getValue(flowerbed, next) ===
-      0
+      (getValue(flowerbed, prev) + getValue(flowerbed, i),
+      getValue(flowerbed, next) === 0)
     ) {
       flowerbed[i] = 1;
       count++;
@@ -21,5 +19,3 @@ const canPlaceFlowers = (flowerbed, n) => {
   }
   return count >= n;
 };
-
-// arr = [1,0,0,0,1,0,0,1]

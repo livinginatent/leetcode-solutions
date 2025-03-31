@@ -1,14 +1,18 @@
-const mergeAlternately = (word1,word2) => {
-  const len = Math.max(word1.length,word2.length)
-  let result = ''
-  for(let i=0;i<len;i++){
-    if(word1[i]){
-      result+=word1[i]
+const mergeAlternately = (str1, str2) => {
+  const arr1 = str1.split("");
+  const arr2 = str2.split("");
+  const len = Math.max(arr1.length, arr2.length);
+  let res = ''
+  for (let i = 0; i < len; i++) {
+    if(arr1[i]){
+      res+=arr1[i]
     }
-    if (word2[i]) {
-      result += word2[i];
+    if(arr2[i]){
+      res+=arr2[i]
     }
   }
-  return result
-}
+  console.log(res)
+  return res
+};
 
+mergeAlternately("abc", "pqr");

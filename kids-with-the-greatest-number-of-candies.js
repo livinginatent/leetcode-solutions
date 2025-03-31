@@ -1,4 +1,4 @@
 const kidsWithCandies = (candies, extraCandies) => {
-  const largest = Math.max(...candies);
-  return candies.map((candy) => candy + extraCandies >= largest);
+  const kidWithMost = Math.max(...candies);
+  return candies.map((candy) => candy + extraCandies >= kidWithMost);
 };
